@@ -5,6 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
+    <style>
+      body {
+        background-color: #fffffff5; /* Set the background to black */
+        color: #000; /* Set the text color to black */
+      }
+      .details-container {
+        height: 500px; /* Set the desired height */
+        width: 300px;
+     }
+     .experience-sub-title.project-title {
+      font-size: 18px; /* Set the desired font size for all elements with this class */
+     }
+    </style>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -15,6 +28,7 @@
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
+          <li><a href="#tools">Tools</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -31,6 +45,7 @@
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#tools" onclick="toggleMenu()">Tools</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
@@ -68,6 +83,12 @@
             class="icon"
             onclick="location.href='https://github.com/AshwinUnnikrishnan'"
           />
+          <img
+          src="./assets/tableau.png"
+          alt="My Github profile"
+          class="icon"
+          onclick="location.href='https://public.tableau.com/app/profile/ashwin.unnikrishnan/vizzes'"
+        />
         </div>
       </div>
     </section>
@@ -77,14 +98,14 @@
       <div class="section-container">
         <div class="section__pic-container">
           <img
-            src="./assets/about-pic.png"
+            src="./assets/side.png"
             alt="Profile picture"
             class="about-pic"
           />
         </div>
         <div class="about-details-container">
           <div class="about-containers">
-            <div class="details-container">
+            <div class="details-container" style="height: 150px;">
               <img
                 src="./assets/experience.png"
                 alt="Experience icon"
@@ -93,7 +114,7 @@
               <h3>Experience</h3>
               <p>Machine Learning : 2+ years <br />Software Development : 4+ years</p>
             </div>
-            <div class="details-container">
+            <div class="details-container" style="height: 150px;">
               <img
                 src="./assets/education.png"
                 alt="Education icon"
@@ -105,7 +126,7 @@
           </div>
           <div class="text-container">
             <p>
-              asdasda
+              I have a quirky passion for tackling real-world challenges, streamlining operations, and conjuring up innovative concepts to address familiar issues. This is precisely why I have a soft spot for bouldering, where problem-solving takes center stage. I'm ever eager to engage in lively discussions, offering constructive criticism to enhance and refine any given project.
             </p>
           </div>
         </div>
@@ -122,24 +143,92 @@
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <h2 class="experience-sub-title">Languages/Databases</h2>
+            <h2 class="experience-sub-title" style="text-align: left;">
+              Raysecur Inc.
+              <span style="float: right; font-size: 14px;">Jan 2023 - Aug 2023</span>
+            </h2>            
+              <p style="text-align: left;"> <strong>Machine Learning Engineer</strong>  
+              ( Computer Vision, Machine Learning, Data Pipeline, Cloud)
+              <ul style="text-align: left;font-size:12px;">
+                <li>	Engineered and deployed robust image classification models utilizing the MobileNet architecture for terahertz imaging focused on threat detection in mail security and successfully transitioned the flagship product’s inaugural classification model into production. </li>
+                <li>	Conducted extensive research and exploratory data analysis on terahertz imaging techniques, effectively integrating them into the model design process by normalization and histogram stretching helped improve accuracy of model by 12%.</li>
+                <li> Developed an end-to-end automated CI/CD pipeline for use case-specific dataset generation, model training, and detailed reporting on optimal hyperparameters, resulting in a 60% reduction in time as part of NSF grant.</li>
+                <li>	Implemented AWS Lambda functions to merge images from diverse data sources, streamlining dataset generation and threat item-oriented database management, dataset merging and maintenance time was reduced by 20%.</li>
+                <li>	Investigated potential of using Generative Adversarial Networks(GANs) and Diffuser models to create synthetic terahertz images.</li>
+                <li>	Developed an Optical Character Recognition model for reading mail addresses and flagging spam mailing addresses.</li>
+              </ul>
+            </p>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title" style="text-align: left;">
+              Qualcomm
+              <span style="float: right; font-size: 14px;">July 2017 - Feb 2021</span>
+                </h2> 
+            <p style="text-align: left;"> <strong>Senior Software Engineer</strong>  
+              ( Python Developer, ML Engineer)
+              <ul style="text-align: left;font-size:12px;">
+                <li>	Led a team of seven engineers within the IoT Stability group, overseeing stability testing for Qualcomm-delivered IoT chipsets. Collaborated with cross-functional teams to develop and implement production plans.</li>
+                <li>	Engineered organization specific chatbot seamlessly integrated with Skype. Utilized dynamic model training for limited data. Employed <strong>TF-IDF with cosine similarity</strong> for precise query matching, helped improve user experience saving 30% time.</li>
+                <li>	Developed and trained a <strong>sentiment analysis</strong> model to analyze customer reviews scraped from various websites, enhancing the quality of test cases in production and ensuring comprehensive bug detection prior to deployment.</li>
+                <li>	Created Auto Code Maintenance tool utilizing <strong>Q-learning</strong> technique to upkeep the stability testing UI code for wearables, reducing time needed for manual code maintenance by 70%.</li>
+                <li>Devised robotic arm employing stepper motors and microcontrollers to replicate running, walking, and swimming actions, enhancing the effectiveness of testing, resulting in cost savings of <strong>$40,000</strong>.</li>
+                <li> Managed IoT testing automation development(stability, platform, OTA) using agile methodology, played a key role in Python framework transition from Perl scripts, and earned the <strong>Q-star</strong> award for exceptional leadership and rapid, effective implementation.</li>
+                <li> Took charge of establishing automation farms for stability runs and contributed to developing tools that automatically initiate runs by analyzing device utilization, thereby enhancing overall efficiency by 20%.</li>            
+              </ul>
+            </p>
+            
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#tools'"
+      />
+    </section>
+    <section id="tools">
+      <h1 class="title">Tools</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Languages/DB</h2>
             <div class="article-container">
               <ul>
-                <li><strong>HTML:</strong> Experienced</li>
-                <li><strong>Node JS:</strong> Intermediate</li>
-                <li><strong>Express JS:</strong> Intermediate</li>
-                <li><strong>Git:</strong> Intermediate</li>
+                <li><strong>Python:</strong> Experienced</li>
+                <li><strong>C++:</strong> Experienced</li>
+                <li><strong>Java:</strong> Experienced</li>
+                <li><strong>Javascript:</strong> Experienced</li>
+                <li><strong>Perl:</strong> Intermediate</li>
+                <li><strong>Shell Scripting:</strong> Experienced</li>
+                <li><strong>Kotlin:</strong> Beginner</li>
+                <li><strong>HTML:</strong> Intermediate</li>
+                <li><strong>SQL:</strong> Experienced</li>
+                <li><strong>Vector DB:</strong> Intermediate</li>
+                <li><strong>GraphQL:</strong> Intermediate</li>
+                <li><strong>Snowflake:</strong> Intermediate</li>
               </ul>
             </div>
           </div>
+          
           <div class="details-container">
             <h2 class="experience-sub-title">Libraries</h2>
             <div class="article-container">
               <ul>
-                <li><strong>HTML:</strong> Experienced</li>
-                <li><strong>Node JS:</strong> Intermediate</li>
-                <li><strong>Express JS:</strong> Intermediate</li>
-                <li><strong>Git:</strong> Intermediate</li>
+                <li><strong>Hugging Face:</strong> Experienced</li>
+                <li><strong>Tensorflow:</strong> Experienced</li>
+                <li><strong>Scikit-Learn:</strong> Experienced</li>
+                <li><strong>OpenCV:</strong> Experienced</li>
+                <li><strong>Pandas:</strong> Experienced</li>
+                <li><strong>Numpy:</strong> Experienced</li>
+                <li><strong>XGBoost:</strong> Experienced</li>
+                <li><strong>SpaCy:</strong> Experienced</li>
+                <li><strong>Seaborn:</strong> Experienced</li>
+                <li><strong>Matplotlib:</strong> Experienced</li>
+                <li><strong>Plotply:</strong> Experienced</li>
+                <li><strong>PIL:</strong> Experienced</li>
+                <li><strong>MLFlow:</strong> Intermediate</li>
+
               </ul>
             </div>
           </div>
@@ -147,14 +236,44 @@
             <h2 class="experience-sub-title">Frameworks</h2>
             <div class="article-container">
               <ul>
-                <li><strong>HTML:</strong> Experienced</li>
-                <li><strong>Node JS:</strong> Intermediate</li>
-                <li><strong>Express JS:</strong> Intermediate</li>
-                <li><strong>Git:</strong> Intermediate</li>
+                <li><strong>PySpark:</strong> Experienced</li>
+                <li><strong>GitHub:</strong> Experienced</li>
+                <li><strong>PyTorch:</strong> Experienced</li>
+                <li><strong>Jira:</strong> Experienced</li>
+                <li><strong>PyCaret:</strong> Experienced</li>
+                <li><strong>LangChain:</strong> Experienced</li>
+                <li><strong>StreamLit:</strong> Experienced</li>
+                <li><strong>AWS:</strong> Experienced</li>
+                <li><strong>GCP:</strong> Intermediate</li>
+                <li><strong>Azure:</strong> Intermediate</li>
+                <li><strong>BigQuery:</strong> Intermediate</li>
+                <li><strong>Kubernetes:</strong> Intermediate</li>
+                <li><strong>Docker:</strong> Intermediate</li>
+                <li><strong>Databricks:</strong> Intermediate</li>
               </ul>
             </div>
           </div>
-        
+          <div class="details-container">
+            <h2 class="experience-sub-title">Domain</h2>
+            <div class="article-container">
+              <ul>
+                <li><strong>Computer Vision</strong> </li>
+                <li><strong>Deep Learning</strong> </li>
+                <li><strong>Recommender Systems</strong> </li>
+                <li><strong>Reinforcement Learning</strong> </li>
+                <li><strong>GAN's</strong> </li>
+                <li><strong>Stable Diffusion</strong> </li>
+                <li><strong>Image Processing</strong> </li>
+                <li><strong>Image Segmentation</strong> </li>
+                <li><strong>Data Visualization</strong> </li>
+                <li><strong>Data Analysis</strong> </li>
+                <li><strong>LLM</strong> </li>
+                <li><strong>A/B Testing</strong> </li>
+                <li><strong>Causal Inference</strong> </li>
+                <li><strong>Collabrative Filtering</strong> </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
       <img
@@ -169,73 +288,98 @@
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <div style="overflow: auto; max-height: 600px;">
+          <div style="overflow: auto; max-height: 700px;">
 
           <table>
             <tr>
               <td>
       
-          <div class="details-container color-container" style="background-color: #FF0000;">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </td>
-        <td>
-          <div class="details-container color-container" style="background-color: #FF0000;">
+                <div class="details-container color-container" style="background-color: #b4bcaf;">
+                  <div class="article-container">
+                    <img
+                      src="./assets/stereo_Vision.png"
+                      alt="Stereo Vision"
+                      class="project-img"
+                    />
+                  </div>
+                  <h3 class="experience-sub-title project-title">Stereo Vision</h3>
+                  <p class="project-description">Depth estimation using simple stereo involves capturing images of the same scene from two slightly offset cameras and then calculating the disparity between corresponding points in the two images to determine the scene's depth information.</p>
+
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/AshwinUnnikrishnan/StrereoVision'"
+                    >
+                      Github
+                    </button>
+      
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="details-container color-container" style="background-color: #b4bcaf;">
             <div class="article-container">
               <img
                 src="./assets/project-2.png"
-                alt="Project 2"
+                alt="Social Media Classifier"
                 class="project-img"
+                style="height: 200px;"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="experience-sub-title project-title">Social Media Classifier</h2>
+            <p class="project-description" >The crux of the entrepreneurial project is to create a user-friendly tool that categorizes profiles into various sections such as Sports, Food, Travel, etc., facilitating efficient profile tracking for both content creators and followers, ultimately saving valuable time.</p>
+
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/AshwinUnnikrishnan/IntrovertSocialMedia'"
               >
                 Github
               </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
             </div>
-          </div>
-        </td>
-        <td>
-          <div class="details-container color-container" style="background-color: #FF0000;">
+                </div>
+              </td>
+              <td>
+                <div class="details-container color-container" style="background-color: #747da4;">
+                  <div class="article-container">
+                    <img
+                      src="./assets/project-3.png"
+                      alt="California Housing Price"
+                      class="project-img"
+                      style="height: 200px;"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">California Housing Price</h2>
+                  <p class="project-description" >The project aims to analyze California's housing market data to predict and understand housing price trends and factors influencing them.</p>
+
+                  <div class="btn-container">
+
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/'"
+                    >
+                      Github
+                    </button>
+                  </div>
+                </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+      
+                <div class="details-container color-container" style="background-color: #FF0000;">
             <div class="article-container">
               <img
-                src="./assets/project-3.png"
-                alt="Project 3"
+                src="./assets/FER.png"
+                alt="EmoSense: Empathetic Emotion Analysis"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title">EmoSense: Empathetic Emotion Analysis</h2>
+            <p class="project-description" >Utilized transfer learning techniques to construct a real-time emotion detection tool designed to enhance comprehension of individuals' emotions in various scenarios, including therapy, interviews, and other applications.
+            </p>
+
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -243,182 +387,374 @@
               >
                 Github
               </button>
+
+            </div>
+                </div>
+              </td>
+              <td>
+                <div class="details-container color-container" style="background-color: #FF0000;">
+            <div class="article-container">
+              <img
+                src="./assets/content.png"
+                alt="Content Based Image Filtering"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Content Based Image Filtering</h2>
+            <p class="project-description" >
+              Designed a basic image similarity search system in C++ with filter and histogram matching techniques to gain insights into filter operations within larger models, despite not achieving state-of-the-art performance.            </p>
+
+            <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/'"
               >
-                Live Demo
+                Github
               </button>
+
             </div>
-          </div>
-        </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
+                </div>
+              </td>
+              <td>
+                <div class="details-container color-container" style="background-color: #FF0000;">
+                  <div class="article-container">
+                    <img
+                      src="./assets/greek.png"
+                      alt="MNIST and Greek Symbol Recognition"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">MNIST and Greek Symbol Recognition</h2>
+                  <p class="project-description" >
+                    Created a straightforward image similarity search system utilizing C++ with filter and histogram matching techniques. Although not state-of-the-art in terms of performance, this project offers valuable insights into the operation of filters within complex models while maintaining computational efficiency.
+                  </p>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/'"
+                    >
+                      Github
+                    </button>
 
-    <div class="details-container color-container" style="background-color: #FF0000;">
-      <div class="article-container">
-        <img
-          src="./assets/project-1.png"
-          alt="Project 1"
-          class="project-img"
-        />
-      </div>
-      <h2 class="experience-sub-title project-title">Project One</h2>
-      <div class="btn-container">
-        <button
-          class="btn btn-color-2 project-btn"
-          onclick="location.href='https://github.com/'"
-        >
-          Github
-        </button>
-        <button
-          class="btn btn-color-2 project-btn"
-          onclick="location.href='https://github.com/'"
-        >
-          Live Demo
-        </button>
-      </div>
-    </div>
-  </td>
-  <td>
-    <div class="details-container color-container" style="background-color: #FF0000;">
-      <div class="article-container">
-        <img
-          src="./assets/project-2.png"
-          alt="Project 2"
-          class="project-img"
-        />
-      </div>
-      <h2 class="experience-sub-title project-title">Project Two</h2>
-      <div class="btn-container">
-        <button
-          class="btn btn-color-2 project-btn"
-          onclick="location.href='https://github.com/'"
-        >
-          Github
-        </button>
-        <button
-          class="btn btn-color-2 project-btn"
-          onclick="location.href='https://github.com/'"
-        >
-          Live Demo
-        </button>
-      </div>
-    </div>
-  </td>
-  <td>
-    <div class="details-container color-container" style="background-color: #FF0000;">
-      <div class="article-container">
-        <img
-          src="./assets/project-3.png"
-          alt="Project 3"
-          class="project-img"
-        />
-      </div>
-      <h2 class="experience-sub-title project-title">Project Three</h2>
-      <div class="btn-container">
-        <button
-          class="btn btn-color-2 project-btn"
-          onclick="location.href='https://github.com/'"
-        >
-          Github
-        </button>
-        <button
-          class="btn btn-color-2 project-btn"
-          onclick="location.href='https://github.com/'"
-        >
-          Live Demo
-        </button>
-      </div>
-    </div>
-  </div>
-  </td>
-</tr>
-<tr>
-  <td>
+                  </div>
+                </div>
+              </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+      
+                <div class="details-container color-container" style="background-color: #FF0000;">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Simplified Custom Object Filtering"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Simplified Custom Object Filtering</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
 
-<div class="details-container color-container" style="background-color: #FF0000;">
-<div class="article-container">
-  <img
-    src="./assets/project-1.png"
-    alt="Project 1"
-    class="project-img"
-  />
-</div>
-<h2 class="experience-sub-title project-title">Project One</h2>
-<div class="btn-container">
-  <button
-    class="btn btn-color-2 project-btn"
-    onclick="location.href='https://github.com/'"
-  >
-    Github
-  </button>
-  <button
-    class="btn btn-color-2 project-btn"
-    onclick="location.href='https://github.com/'"
-  >
-    Live Demo
-  </button>
-</div>
-</div>
-</td>
-<td>
-<div class="details-container color-container" style="background-color: #FF0000;">
-<div class="article-container">
-  <img
-    src="./assets/project-2.png"
-    alt="Project 2"
-    class="project-img"
-  />
-</div>
-<h2 class="experience-sub-title project-title">Project Two</h2>
-<div class="btn-container">
-  <button
-    class="btn btn-color-2 project-btn"
-    onclick="location.href='https://github.com/'"
-  >
-    Github
-  </button>
-  <button
-    class="btn btn-color-2 project-btn"
-    onclick="location.href='https://github.com/'"
-  >
-    Live Demo
-  </button>
-</div>
-</div>
-</td>
-<td>
-<div class="details-container color-container" style="background-color: #FF0000;">
-<div class="article-container">
-  <img
-    src="./assets/project-3.png"
-    alt="Project 3"
-    class="project-img"
-  />
-</div>
-<h2 class="experience-sub-title project-title">Project Three</h2>
-<div class="btn-container">
-  <button
-    class="btn btn-color-2 project-btn"
-    onclick="location.href='https://github.com/'"
-  >
-    Github
-  </button>
-  <button
-    class="btn btn-color-2 project-btn"
-    onclick="location.href='https://github.com/'"
-  >
-    Live Demo
-  </button>
-</div>
-</div>
-</div>
-</td>
-</tr>
-    </table>
+            </div>
+                </div>
+              </td>
+              <td>
+                <div class="details-container color-container" style="background-color: #FF0000;">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Real Time Filtering"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Real Time Filtering</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+
+            </div>
+                </div>
+              </td>
+              <td>
+                <div class="details-container color-container" style="background-color: #FF0000;">
+                  <div class="article-container">
+                    <img
+                      src="./assets/project-3.png"
+                      alt="Augmented Reality"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Augmented Reality</h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/'"
+                    >
+                      Github
+                    </button>
+
+                  </div>
+                </div>
+              </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+      
+                <div class="details-container color-container" style="background-color: #FF0000;">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Stable Diffusion with Diffusers"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Stable Diffusion with 🧨 Diffusers</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+
+            </div>
+                </div>
+              </td>
+              <td>
+                <div class="details-container color-container" style="background-color: #FF0000;">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Denoising Autoencoders MNIST"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Denoising Autoencoders MNIST</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+
+            </div>
+                </div>
+              </td>
+              <td>
+                <div class="details-container color-container" style="background-color: #FF0000;">
+                  <div class="article-container">
+                    <img
+                      src="./assets/project-3.png"
+                      alt="Generating Synthetic Images : Denoising Autoencoders"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Generating Synthetic Images : Denoising Autoencoders</h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/'"
+                    >
+                      Github
+                    </button>
+
+                  </div>
+                </div>
+              </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+      
+                <div class="details-container color-container" style="background-color: #FF0000;">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="PACMAN"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">PACMAN : Different RL algorithms with GUI</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+
+            </div>
+                </div>
+              </td>
+              <td>
+                <div class="details-container color-container" style="background-color: #FF0000;">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Open AI Gym based Games"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Open AI Gym based Games</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+
+            </div>
+                </div>
+              </td>
+              <td>
+                <div class="details-container color-container" style="background-color: #FF0000;">
+                  <div class="article-container">
+                    <img
+                      src="./assets/project-3.png"
+                      alt="Movie Recommendation System"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Movie Recommendation System</h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/'"
+                    >
+                      Github
+                    </button>
+
+                  </div>
+                </div>
+              </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+      
+                <div class="details-container color-container" style="background-color: #FF0000;">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Sentiment Analysis on Audio Text Data"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Sentiment Analysis on Audio Text Data</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+
+            </div>
+                </div>
+              </td>
+              <td>
+                <div class="details-container color-container" style="background-color: #FF0000;">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Boston Weather Prediction"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Boston Weather Prediction</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+
+            </div>
+                </div>
+              </td>
+              <td>
+                <div class="details-container color-container" style="background-color: #FF0000;">
+                  <div class="article-container">
+                    <img
+                      src="./assets/project-3.png"
+                      alt="Sentence BERT and TAPAS based Question Answer"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Sentence BERT and TAPAS based Question Answer</h2>
+                  <div class="btn-container">
+                    <button
+                      class="btn btn-color-2 project-btn"
+                      onclick="location.href='https://github.com/'"
+                    >
+                      Github
+                    </button>
+
+                  </div>
+                </div>
+              </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+      
+                <div class="details-container color-container" style="background-color: #FF0000;">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Stock Market Application"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Stock Market Application</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+
+            </div>
+                </div>
+              </td>
+              <td>
+                <div class="details-container color-container" style="background-color: #FF0000;">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Streamlit Based Quick EDA Tool"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Streamlit Based Quick EDA Tool</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+
+            </div>
+                </div>
+              </td>
+            </tr>
+          </table>
   </div>
 
       </div>
