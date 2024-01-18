@@ -109,7 +109,7 @@
             <div class="details-container" style="height: 150px; flex: 0 0 calc(50% - 20px); box-sizing: border-box;">
               <img src="./assets/education.png" alt="Education icon" class="icon" />
               <h3>Education</h3>
-              <p>B.Tech Computer Science<br /><br />M.S Artificial Intelligence</p>
+              <p>B.Tech Computer Science<br />M.S Artificial Intelligence</p>
             </div>
           </div>
           <div class="text-container">
@@ -131,14 +131,21 @@
               <span style="float: right; font-size: 14px;">Jan 2023 - Aug 2023</span>
             </h2>            
               <p style="text-align: left;"> <strong>Machine Learning Engineer</strong>  
-              ( Computer Vision, Machine Learning, Data Pipeline, Cloud)
+              ( Computer Vision )
               <ul style="text-align: left;font-size:12px;">
-                <li>	Engineered and deployed robust image classification models utilizing the MobileNet architecture for terahertz imaging focused on threat detection in mail security and successfully transitioned the flagship product’s inaugural classification model into production. </li>
-                <li>	Conducted extensive research and exploratory data analysis on terahertz imaging techniques, effectively integrating them into the model design process by normalization and histogram stretching helped improve accuracy of model by 12%.</li>
-                <li> Developed an end-to-end automated CI/CD pipeline for use case-specific dataset generation, model training, and detailed reporting on optimal hyperparameters, resulting in a 60% reduction in time as part of NSF grant.</li>
-                <li>	Implemented AWS Lambda functions to merge images from diverse data sources, streamlining dataset generation and threat item-oriented database management, dataset merging and maintenance time was reduced by 20%.</li>
-                <li>	Investigated potential of using Generative Adversarial Networks(GANs) and Diffuser models to create synthetic terahertz images.</li>
-                <li>	Developed an Optical Character Recognition model for reading mail addresses and flagging spam mailing addresses.</li>
+                <li>	Fine-tuned Convolutional Neural Network MobileNetV2 for detecting abnormal items for terahertz imaging. Leveraged CUDA and used
+cross validation and class weighing, achieved model accuracy of 97% and recall of 0.95. Explored quantization aware training techniques.</li>
+<li> Improved accuracy of abnormal item detection by 12% through research and exploratory data analysis on terahertz imaging, focusing on
+pixel intensity distribution and advanced image processing techniques, used AWS Sagemaker to run multiple experiments.</li>
+<li> Orchestrated end-to-end machine learning model development pipeline, including dataset generation, hyperparameter tuning, model
+training. Reduced the overall model experimentation and development time by 60%, used GitHub for model version control.</li>
+<li> Streamlined data ingestion with ETL data pipeline, Apache Airflow to integrate images from diverse repositories using AWS lambda, S3.</li>
+<li> Implemented Data Drift Detection System using statistical hypothesis testing to monitor pixel intensity variation ensuring robustness.</li>
+<li> Developed object detection system using Faster R-CNN to detect abnormal item mail, achieving Intersection over Union (IoU) score 0.40.</li>
+<li> Researched use of conditional Generative Adversarial Networks (GANs) to generate synthetic images to handle data imbalance.</li>
+<li> Developed multivariate time series model using VectorARIMA to accurately forecast sales, enabling effective inventory management.</li>
+<li> Models were dockerized and deployed on AWS EC2 cloud infrastructure, with Apache Kafka for real time streaming and rapid scalability.</li>
+
               </ul>
             </p>
           </div>
